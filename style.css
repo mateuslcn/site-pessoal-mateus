@@ -1771,6 +1771,19 @@ body.map-fullscreen-active .site-footer {
     .search-container {
         max-width: 100%;
     }
+
+    .pagination-row {
+        flex-wrap: wrap;
+        gap: 0.35rem;
+        justify-content: center;
+    }
+
+    .page-btn {
+        min-width: 32px;
+        height: 32px;
+        padding: 0 0.35rem;
+        font-size: 0.8rem;
+    }
     
     footer .container {
         flex-direction: column;
