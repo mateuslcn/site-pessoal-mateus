@@ -1140,8 +1140,14 @@ body.map-fullscreen-active .site-footer {
 
 .articles-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: var(--spacing-md);
+}
+
+@media (max-width: 480px) {
+    .articles-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 .article-card {
@@ -1700,6 +1706,9 @@ body.map-fullscreen-active .site-footer {
 @media (max-width: 768px) {
     :root {
         --header-height: 120px; /* Estimates header height on mobile for map and spacing calculations */
+        --spacing-md: 1.25rem;  /* Reduces horizontal padding from 32px to 20px on mobile */
+        --spacing-lg: 2rem;     /* Reduces large section margins */
+        --spacing-xl: 3.5rem;   /* Reduces large section spacing */
     }
 
     /* Ocultar Menu Sanduíche */
