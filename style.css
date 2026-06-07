@@ -169,9 +169,10 @@ nav {
 }
 
 /* Social Icons in Header */
-.nav-social-item {
+.nav-social-group {
     display: flex;
     align-items: center;
+    gap: 8px; /* Keep icons close to each other */
 }
 
 .nav-social-link {
@@ -181,8 +182,8 @@ nav {
 }
 
 .nav-social-link svg {
-    width: 17px;
-    height: 17px;
+    width: 21px; /* Increased from 17px */
+    height: 21px;
     display: block;
 }
 
@@ -1748,8 +1749,8 @@ body.map-fullscreen-active .site-footer {
     }
 
     .nav-social-link svg {
-        width: 16px;
-        height: 16px;
+        width: 19px;
+        height: 19px;
     }
     
     .articles-header {
