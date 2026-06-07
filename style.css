@@ -1767,6 +1767,28 @@ body.map-fullscreen-active .site-footer {
         flex-direction: column;
         text-align: center;
     }
+
+    .footer-columns {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+
+    .footer-col {
+        align-items: center;
+    }
+
+    .footer-links {
+        align-items: center;
+    }
+
+    .footer-social-circles {
+        justify-content: center;
+    }
+
+    .footer-search-form {
+        width: 100%;
+        max-width: 320px;
+    }
 }
 
 /* ==========================================================================
