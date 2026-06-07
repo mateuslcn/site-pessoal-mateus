@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html prefix="og: http://ogp.me/ns#" class="no-js lt-ie9 lt-ie8 lt-ie7" lang="pt-br" dir="ltr"> <![endif]-->
+<!--[if IE 7]>         <html prefix="og: http://ogp.me/ns#" class="no-js lt-ie9 lt-ie8" lang="pt-br" dir="ltr"> <![endif]-->
+<!--[if IE 8]>         <html prefix="og: http://ogp.me/ns#" class="no-js lt-ie9" lang="pt-br" dir="ltr"> <![endif]-->
+<!--[if gt IE 8]><!--> <html prefix="og: http://ogp.me/ns#" class="no-js" lang="pt-br" dir="ltr"> <!--<![endif]-->
+<head>
+    <!--[if lt IE 9]>
+    <script src="/templates/padraogoverno01/js/html5shiv.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="/templates/padraogoverno01/bootstrap/css/bootstrap.min.css" type='text/css'/>
+    <link rel="stylesheet" href="/templates/padraogoverno01/css/template-amarelo.css" type='text/css'/>
+        <link rel="stylesheet" href="/templates/padraogoverno01/font-awesome/css/font-awesome.min.css" type='text/css'/>
+    <!--[if lt IE 10]>
+    <link rel="stylesheet" href="/templates/padraogoverno01/css/ie.css" />
+    <![endif]-->
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" href="/templates/padraogoverno01/css/ie8.css" />
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="/templates/padraogoverno01/css/ie7.css" />
+    <link rel="stylesheet" href="/font-awesome/css/font-awesome-ie7.min.css" />
+    <![endif]-->    
+        <base href="https://www.cdsa.ufcg.edu.br/images/Logomarcas/UFCG/Logo-Selo-UFCG.png" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>CDSA/UFCG Página Inicial</title>
+	<link href="/templates/padraogoverno01/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+	<link href="https://www.cdsa.ufcg.edu.br/index.php/component/search/?Itemid=101&amp;format=opensearch" rel="search" title="Buscar CDSA UFCG" type="application/opensearchdescription+xml" />
+	<link href="https://cdn.jsdelivr.net/npm/simple-line-icons@2.4.1/css/simple-line-icons.css" rel="stylesheet" type="text/css" />
+	<link href="/components/com_k2/css/k2.css?v=2.10.3&b=20200429" rel="stylesheet" type="text/css" />
+	<link href="https://www.cdsa.ufcg.edu.br/templates/padraogoverno01/html/mod_banners/css/banner-rotativo-home.css" rel="stylesheet" type="text/css" />
+	<script src="/media/jui/js/jquery.min.js?d0172e61bf2cb4008648d0bcc70a1440" type="text/javascript"></script>
+	<script src="/media/jui/js/jquery-noconflict.js?d0172e61bf2cb4008648d0bcc70a1440" type="text/javascript"></script>
+	<script src="/media/jui/js/jquery-migrate.min.js?d0172e61bf2cb4008648d0bcc70a1440" type="text/javascript"></script>
+	<script src="/media/k2/assets/js/k2.frontend.js?v=2.10.3&b=20200429&sitepath=/" type="text/javascript"></script>
+	<script src="https://www.cdsa.ufcg.edu.br/templates/padraogoverno01/html/mod_banners/js/banner-rotativo-home.js" type="text/javascript"></script>
+	<!--[if lt IE 9]><link rel="stylesheet" href="https://www.cdsa.ufcg.edu.br/modules/mod_barradogoverno/assets/2014/css/ie8.css" type="text/css" /><![endif]-->
+
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        		<link href='https://www.cdsa.ufcg.edu.br/templates/padraogoverno01/css/fontes.css'  rel='stylesheet' type='text/css'>
+		
+</head>
+<body >
+    <a class="hide" id="topo" href="#accessibility">Ir direto para menu de acessibilidade.</a>
+    <noscript>
+      <div class="error minor-font">
+        Seu navegador de internet está sem suporte à JavaScript. Por esse motivo algumas funcionalidades do site podem não estar acessíveis.
+      </div>
+    </noscript>
+    <!--[if lt IE 7]><center><strong>Atenção, a versão de seu navegador não é compatível com este sítio. Atualize seu navegador.</strong></center><![endif]-->
+    <!-- barra do governo -->
+<div id="barra-brasil">
+	<div id="barra-brasil" style="background:#7F7F7F; height: 20px; padding:0 0 0 10px;display:block;"> 
+	<ul id="menu-barra-temp" style="list-style:none;">
+		<li style="display:inline; float:left;padding-right:10px; margin-right:10px; border-right:1px solid #EDEDED"><a href="http://brasil.gov.br" style="font-family:sans,sans-serif; text-decoration:none; color:white;">Portal do Governo Brasileiro</a></li> 
+		<li><a style="font-family:sans,sans-serif; text-decoration:none; color:white;" href="http://epwg.governoeletronico.gov.br/barra/atualize.html">Atualize sua Barra de Governo</a></li>
+	</ul>
+	</div>
+</div>
+	
+<!--[if lt IE 7]><br /><strong>Seu navegador é incompatível com os novos padrões de tecnologia e por isso você não pode visualizar a nova barra do Governo Federal. Atualize ou troque seu navegador.</strong><br /><![endif]-->
+<!-- fim barra do governo -->
+    <div class="layout">
+        <header>
+            <div class="container">
+                <div class="row-fluid accessibility-language-actions-container">
+                    <div class="span6 accessibility-container">
+                        <ul id="accessibility">
+                            <li>
+                                <a accesskey="1" href="#content" id="link-conteudo">
+                                    Ir para o conte&uacute;do
+                                    <span>1</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a accesskey="2" href="#navigation" id="link-navegacao">
+                                    Ir para o menu
+                                    <span>2</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a accesskey="3" href="#portal-searchbox" id="link-buscar">
+                                    Ir para a busca
+                                    <span>3</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a accesskey="4" href="#footer" id="link-rodape">
+                                    Ir para o rodap&eacute;
+                                    <span>4</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- fim div.span6 -->
+                    <div class="span6 language-and-actions-container">
+                        		<h2 class="hide">Opções de acessibilidade</h2>
+		
+<ul class="pull-right" id="portal-siteactions">
+<li class="item-140"><a href="/index.php/acessibilidade" accesskey="5" >Acessibilidade</a></li><li class="item-141 toggle-contraste"><a class="toggle-contraste" href="#"  accesskey="6" >Alto contraste</a></li><li class="item-142"><a href="/index.php/mapa-do-site" accesskey="7" >Mapa do site</a></li></ul>
+	
+                    </div>
+                    <!-- fim div.span6 -->
+                </div>
+                <!-- fim .row-fluid -->
+                <div class="row-fluid">
+                    <div id="logo" class="span8 small">
+                        <a href="https://www.cdsa.ufcg.edu.br/" title="Centro de Desenvolvimento Sustentável do Semiárido">
+                                                        <img src="https://www.cdsa.ufcg.edu.br/images/headers/logo_CDSA_selo-2.png" alt="Centro de Desenvolvimento Sustentável do Semiárido" />
+                                                        <span class="portal-title-1">UNIVERSIDADE FEDERAL DE CAMPINA GRANDE - UFCG - CAMPUS SUMÉ</span>
+                            <h1 class="portal-title corto">Centro de Desenvolvimento Sustentável do Semiárido</h1>
+                            <span class="portal-description"></span>
+                        </a>
+                    </div>
+                    <!-- fim .span8 -->
+                    <div class="span4">
+                        	<div id="portal-searchbox" class="row">
+    	<h2 class="hidden">Buscar no portal</h2>
+    	<form action="/index.php" method="post" class="pull-right">
+ 	<fieldset>
+        <legend class="hide">Busca</legend>
+        <h2 class="hidden">Buscar no portal</h2>
+        <div class="input-append">
+        	<label for="portal-searchbox-field" class="hide">Busca: </label>
+        	<input type="text" id="portal-searchbox-field" class="searchField" placeholder="Buscar no portal" title="Buscar no portal" name="searchword">       
+            <button type="submit" class="btn searchButton"><span class="hide">Buscar</span><i class="icon-search"></i></button>
+		</div>
+		<input type="hidden" name="task" value="search" />
+		<input type="hidden" name="option" value="com_search" />
+		<input type="hidden" name="Itemid" value="101" />
+	</fieldset>
+</form>
+    </div>
+		<div id="" class="row">
+    	<h2 class="hidden">Logo UFCG</h2>
+    	<p><a href="http://www.ufcg.edu.br" target="_blank" rel="alternate noopener noreferrer"><img style="float: right;" src="/images/UFCG-lateral-2.png" width="140" height="44" /></a></p>    </div>
+		<div id="social-icons" class="row">
+    	<h2 class="hidden">Redes Sociais</h2>
+    	
+<ul class="pull-right">
+<li class="portalredes-item item-138"><a href="https://www.facebook.com/CDSA-UFCG-Oficial-339537152755857" target="_blank" rel="noopener noreferrer"><i class="icon-facebook-sign"><span>Facebook</span></i></a></li><li class="portalredes-item item-257"><a href="https://www.instagram.com/assimp.cdsa.ufcg/" target="_blank" rel="noopener noreferrer"><i class="icon-instagram"><span>Instagram</span></i></a></li><li class="portalredes-item item-136"><a href="https://twitter.com/AssimpCDSA_UFCG" target="_blank" rel="noopener noreferrer"><i class="icon-twitter-sign"><span>Twitter</span></i></a></li><li class="portalredes-item item-137"><a href="https://www.youtube.com/channel/UCpQ4whY5gdU5qlYzaSMMUFw" target="_blank" rel="noopener noreferrer"><i class="icon-youtube"><span>YouTube</span></i></a></li><li class="portalredes-item item-226"><a href="/index.php/ultimas-noticias?format=feed&amp;type=rss" ><i class="icon-rss-sign"><span>RSS</span></i></a></li></ul>
+    </div>
+	
+                    </div>
+                    <!-- fim .span4 -->
+                </div>
+                <!-- fim .row-fluid -->
+            </div>
+            <!-- fim div.container -->
+            <div class="sobre">
+                <div class="container">
+                    	<nav class="menu-servicos pull-right">
+        <h2 class="hide">Serviços</h2>
+        
+<ul>
+<li class="item-284"><a href="/index.php/cdsa" >CDSA</a></li><li class="item-286"><a href="/index.php/recursos-humanos" >Recursos Humanos</a></li><li class="item-398"><a href="/index.php/cdsa-pgd" >PGD-CDSA</a></li><li class="item-287"><a href="/index.php/unidades-academicas" >Unidades Acadêmicas</a></li><li class="item-285"><a href="/index.php/telefones" >Telefones</a></li><li class="item-392"><a href="/index.php/agenda" >Agenda da Direção</a></li><li class="item-399"><a href="/index.php/galeria" >Galeria de Imagens/vídeos</a></li></ul>
+<span class="hide">Fim do menu de serviços</span>
+    </nav>
+	
+                </div>
+                <!-- .container -->
+            </div>
+            <!-- fim .sobre -->
+        </header>
+        <main>
+            <div class="container">
+                	<div class="row-fluid">
+		<section id="em-destaque">
+			 
+			 <h2 class="span2"><span>Em destaque</span></h2>
+						<ul class="span10 n5">
+<li class="item-288"><a href="/index.php/assuntos-estudantis" >Assuntos Estudantis</a></li><li class="item-127"><a href="https://portal.pre.ufcg.edu.br/calendarios" >Calendário Acadêmico</a></li><li class="item-128"><a href="/index.php/2013-10-27-00-11-6" >Atendimento Psicológico</a></li><li class="item-129"><a href="/index.php/2013-10-27-00-11-7" >Intérprete de LIBRAS</a></li><li class="item-307"><a href="/index.php/solicitacao-de-chamado-ti-cdsa" >Chamado/Serviços TI-CDSA</a></li></ul>
+		</section>
+	</div>
+	
+                <div class="row-fluid">
+                                        <div id="navigation" class="span3">
+                        <a href="#" class="visible-phone visible-tablet mainmenu-toggle btn"><i class="icon-list"></i>&nbsp;Menu</a>
+                        <section id="navigation-section">
+                            <span class="hide">Início do menu principal</span>
+                            	<nav class=" span11">
+		<h2 >Cursos <i class="icon-chevron-up visible-phone visible-tablet pull-right"></i></h2><!-- visible-phone visible-tablet -->
+		
+<ul>
+<li class="item-329"><a href="/index.php/engenharia-de-biossistemas" >Engenharia de Biossistemas</a></li><li class="item-330"><a href="/index.php/engenharia-de-biotecnologia-e-bioprocessos" >Engenharia de Biotecnologia e Bioprocessos</a></li><li class="item-331"><a href="/index.php/engenharia-de-producao" >Engenharia de Produção</a></li><li class="item-332"><a href="/index.php/licenciatura-em-ciencias-sociais" >Licenciatura em Ciências Sociais</a></li><li class="item-396"><a href="/index.php/licenciatura-em-educacao-escolar-quilombola" >Licenciatura em Educação Escolar Quilombola (Segunda Licenciatura)</a></li><li class="item-333"><a href="/index.php/licenciatura-em-educacao-do-campo" >Licenciatura em Educação do Campo</a></li><li class="item-334"><a href="/index.php/superior-de-tecnologia-em-agroecologia" >Superior de Tecnologia em Agroecologia</a></li><li class="item-335"><a href="/index.php/superior-de-tecnologia-em-gestao-publica" >Superior de Tecnologia em Gestão Pública</a></li><li class="item-381"><a href="/index.php/cursos-de-pos-graduacao" >Cursos de Pós-Graduação</a></li></ul>
+	</nav>
+		<nav class=" span11">
+		<h2 >Institucional <i class="icon-chevron-up visible-phone visible-tablet pull-right"></i></h2><!-- visible-phone visible-tablet -->
+		
+<ul>
+<li class="item-336"><a href="/index.php/direcao-de-centro" >Direção de Centro</a></li><li class="item-337"><a href="/index.php/secretaria-do-centro" >Secretaria do Centro</a></li><li class="item-338"><a href="/index.php/geaf-gerencia-administrativo-financeira" >GEAF – Gerência Administrativo-Financeira</a></li><li class="item-339"><a href="/index.php/gae-gerencia-de-assuntos-estudantis" >CLAE - Coordenação Local de Assistência Estudantil </a></li><li class="item-340"><a href="/index.php/puc-prefeitura-universitaria-do-campus" >PUC – Prefeitura Universitária do Campus</a></li><li class="item-341"><a href="/index.php/biblioteca-setorial" >Biblioteca Setorial</a></li><li class="item-342"><a href="/index.php/coordenacao-de-projetos-e-modernizacao-administrativa-cpma" >Assimp - Assessoria de Imprensa </a></li><li class="item-343"><a href="/index.php/assessoria-de-estagio" >Assessoria de Estágio</a></li><li class="item-344"><a href="/index.php/assessoria-de-extensao" >Assessoria de Extensão</a></li><li class="item-345"><a href="/index.php/assessoria-de-pesquisa" >Assessoria de Pesquisa</a></li><li class="item-346"><a href="/index.php/assessoria-de-monitoria" >Assessoria de Monitoria</a></li><li class="item-347"><a href="/index.php/viveiro-de-mudas-setor-de-paisagismo" >Viveiro de Mudas/Setor de Paisagismo</a></li><li class="item-348"><a href="/index.php/nucleo-de-extensao-cultural" >Núcleo de Extensão Cultural</a></li><li class="item-400"><a href="/index.php/assessoria-para-assuntos-internacionais" >Assessoria para Assuntos Internacionais</a></li><li class="item-401"><a href="/index.php/assessoria-de-arte-e-cultura" >Assessoria de Arte e Cultura</a></li></ul>
+	</nav>
+		<nav class=" span11">
+		<h2 >Serviços e Links <i class="icon-chevron-up visible-phone visible-tablet pull-right"></i></h2><!-- visible-phone visible-tablet -->
+		
+<ul>
+<li class="item-309"><a href="https://www.sei.ufcg.edu.br/" target="_blank" >SEI/UFCG</a></li><li class="item-388"><a href="https://ouvidoria.ufcg.edu.br/" target="_blank" >Ouvidoria da UFCG</a></li><li class="item-387"><a href="/index.php/planos-e-relatorios-de-atividades-docentes" >Planos e Relatórios de Atividades Docentes </a></li><li class="item-310"><a href="http://150.165.111.151:8080/controle/" target="_blank" >Controle Acadêmico</a></li><li class="item-311"><a href="http://pre.sti.ufcg.edu.br/pre/home/formularios" target="_blank" >PRE/Formulários</a></li><li class="item-312"><a href="https://biblioteca.ufcg.edu.br/" target="_blank" >Sistema de Bibliotecas</a></li><li class="item-354"><a href="https://150.165.111.252/~scp/frm_consulta_processo.php" >Protocolo/Processos</a></li><li class="item-353"><a href="/index.php/subprefeitura-servicos-de-manutencao" >Subprefeitura – Serviços de Manutenção</a></li><li class="item-313"><a href="http://capacitacaoufcg.blogspot.com.br/" target="_blank" >Capacitação UFCG</a></li><li class="item-355"><a href="/index.php/certificados" >Certificados</a></li><li class="item-352"><a href="/index.php/logomarcas" >Logomarcas</a></li><li class="item-314"><a href="http://mail.ufcg.edu.br/" target="_blank" >Webmail</a></li><li class="item-356 deeper parent"><a href="#" >Transporte e Diárias</a><ul><li class="item-357"><a href="https://pra.ufcg.edu.br/diarias-e-passagens.html" >Diárias e Passagens</a></li><li class="item-358"><a href="/home/arq/Requisicao-de-Transporte-CDSA-Formulario.docx" >Requisição de Transporte - Formulário</a></li><li class="item-359"><a href="/home/arq/documentos/boletins/Boletim_de_servico_CDSA_10-2013.pdf" >Normas para Liberação de Transportes do CDSA</a></li></ul></li></ul>
+	</nav>
+		<nav class="central-conteudos span11">
+		<h2 >Central de conteúdos <i class="icon-chevron-up visible-phone visible-tablet pull-right"></i></h2><!-- visible-phone visible-tablet -->
+		
+<ul>
+<li class="item-308"><a href="/index.php/documentos" >Documentos</a></li><li class="item-395"><a href="/index.php/planejamento-e-gerenciamento-de-contratacoes-novo-formato-de-exibicao" >Planejamento e Gerenciamento de Contratações (Novo formato de exibição)</a></li><li class="item-389"><a href="/index.php/planejamento-e-gerenciamento-de-contratacoes" >Planejamento e Gerenciamento de Contratações</a></li><li class="item-390"><a href="/phocadownload/2022/ORGANOGRAMA_CDSA-2022.pdf" target="_blank" >Organograma do CDSA</a></li><li class="item-394"><a href="/index.php/eleicao-diretor-e-vice-diretor-2022" >Eleição Diretor e Vice-Diretor 2022</a></li><li class="item-397"><a href="/index.php/imagens-cdsa" >Galeria de imagens/Vídeos</a></li><li class="item-402"><a href="/index.php/reunioes-em-video" >Reuniões </a></li></ul>
+	</nav>
+	
+                            <span class="hide">Fim do menu principal</span>
+                        </section>
+                    </div>
+                    <!-- fim #navigation.span3 -->
+                                        <div id="content" class="span9">
+                        <section id="content-section">
+                            <span class="hide">Início do conteúdo da página</span>
+
+                            
+                            
+                                		<div class="row-fluid module ">
+									<ul class="menu">
+<li class="item-385"><a href="https://comprov.ufcg.edu.br/" target="_blank" rel="noopener noreferrer">COMPROV</a></li><li class="item-386"><a href="#" > | </a></li><li class="item-377"><a href="/index.php/informes-estudantis" >INFORMES ESTUDANTIS</a></li><li class="item-375"><a href="#" >| </a></li><li class="item-367"><a href="/index.php/licitacoes" >LICITAÇÕES</a></li><li class="item-371"><a href="#" > | </a></li><li class="item-368"><a href="/index.php/editais" >EDITAIS</a></li><li class="item-372"><a href="#" > | </a></li><li class="item-393"><a href="/index.php/agenda-auditorio-sala-de-reunioes" >AGENDA AUDITÓRIO/SALA DE REUNIÕES</a></li></ul>
+	
+					</div>
+				<div class="row-fluid module ">
+									
+
+<div class="custom"  >
+	<p><a href="https://www.youtube.com/@canalcdsa" target="_blank" rel="noopener noreferrer"><img style="display: block; margin-left: auto; margin-right: auto;" src="/images/banners/youtube2024CORREO_1.png" alt="" /><br /></a></p>
+<p><a href="/index.php/editais/1904-edital-n-01-2026-projeto-conecta-enem-cdsa" target="_blank" rel="noopener noreferrer"><img style="display: block; margin-left: auto; margin-right: auto;" src="/images/IMG-2026/Conecta_ENEM.png" alt="" /></a></p></div>
+	
+					</div>
+				<div class="row-fluid module ">
+									<div class="carousel banner-carousel slide bannergroup " id="banner-carousel-202">
+<div class="carousel-inner">
+	<div class="banneritem item active">
+																																																	<img
+						src="https://www.cdsa.ufcg.edu.br/images/banners/podcast2025.png"
+						alt="Podcast "
+																	/>
+										<div class="faixa"></div>
+			<h1>
+				<a href="/index.php/component/banners/click/184">
+					Podcast 				</a>
+			</h1>
+							<p>
+					<!-- <a href="/index.php/component/banners/click/184"> -->
+					<h2><span style="color: #000000;"><a style="color: #000000;" href="https://www.youtube.com/@canalcdsa/podcasts" target="_blank" rel="noopener noreferrer">Clique <strong>AQUI</strong> para acessar </a></span></h2>					<!-- </a> -->
+				</p>
+							<div class="clr"></div>
+	</div>
+	<div class="banneritem item ">
+																																																	<img
+						src="https://www.cdsa.ufcg.edu.br/images/Banner2024/Calendrio20261.png"
+						alt="Calendário Acadêmico 2026.1"
+																	/>
+										<div class="faixa"></div>
+			<h1>
+				<a href="/index.php/component/banners/click/192">
+					Calendário Acadêmico 2026.1				</a>
+			</h1>
+							<p>
+					<!-- <a href="/index.php/component/banners/click/192"> -->
+					<h2><span style="color: #000000;"><a style="color: #000000;" href="https://portal.pre.ufcg.edu.br/calendarios" target="_blank" rel="noopener noreferrer">Clique<strong> AQUI</strong> e saiba mais</a></span></h2>					<!-- </a> -->
+				</p>
+							<div class="clr"></div>
+	</div>
+	<div class="banneritem item ">
+																																																	<img
+						src="https://www.cdsa.ufcg.edu.br/images/IMG-2026/mapeamento2026.png"
+						alt="Mapeamento de equipamentos e dispositivos culturais da UFCG"
+																	/>
+										<div class="faixa"></div>
+			<h1>
+				<a href="/index.php/component/banners/click/199">
+					Mapeamento de equipamentos e dispositivos culturais da UFCG				</a>
+			</h1>
+							<p>
+					<!-- <a href="/index.php/component/banners/click/199"> -->
+					<h2><span style="color: #000000;"><a style="color: #000000;" href="https://docs.google.com/forms/d/e/1FAIpQLSehMLLdlPjrpdNsz-9f7mvuRh3lseeCUOfzVeFCmllYDYLzSQ/viewform" target="_blank" rel="noopener noreferrer">Clique <strong>AQUI</strong> e saiba mais</a></span></h2>					<!-- </a> -->
+				</p>
+							<div class="clr"></div>
+	</div>
+	
+</div>
+<ol class="carousel-indicators carousel-indicators-custom">
+			<li data-slide-to="0" data-target="#banner-carousel-202" class="active"><a href="#" title="Podcast ">0</a></li>
+			<li data-slide-to="1" data-target="#banner-carousel-202" class=""><a href="#" title="Calendário Acadêmico 2026.1">1</a></li>
+			<li data-slide-to="2" data-target="#banner-carousel-202" class="last"><a href="#" title="Mapeamento de equipamentos e dispositivos culturais da UFCG">2</a></li>
+</ol>
+</div>
+	
+					</div>
+				<div class="row-fluid module /*module-box-01*/
+manchete-lateral-tit-menor variacao-module-03">
+									<div class="manchete-texto-lateral">
+		<div class="row-fluid">
+			
+		<div class="span4 no-margin">
+				
+		
+					
+				<h1 >
+					<a href="/index.php/noticias/1903-coordenacao-geral-de-arte-e-cultura-cgac-realiza-mapeamento-de-equipamentos-e-dispositivos-culturais-da-ufcg" >
+						Coordenação Geral de Arte e Cultura (CGAC) realiza mapeamento de equipamentos e dispositivos culturais da UFCG					</a>
+				</h1>
+		
+					<p class="description">A Coordenação Geral de Arte e Cultura (CGAC), vinculada à Pró-Reitoria de Pesquisa e Extensão (PROPEX), da Universidade Federal de Campina Grande (UFCG), convida os(as) responsáveis por equipamentos culturais nos Centros e setores da instituição a participarem de um importante levantamento institucional.Este mapeamento tem como objetivo construir uma visão abrangente sobre os equipamentos e...</p>				</div>
+				<div class="span8 img-manchete-lateral">				
+											
+					<a href="/index.php/noticias/1903-coordenacao-geral-de-arte-e-cultura-cgac-realiza-mapeamento-de-equipamentos-e-dispositivos-culturais-da-ufcg">
+						<img src="/images/IMG-2026/mapeamento2026.png" class="img-rounded" width="490" height="auto" alt="" />
+					</a>				
+								
+		</div>
+			</div>
+							<div class="chamadas-secundarias row-fluid">
+			<div class="span4 no-margin">
+				
+								
+									
+						<a href="/index.php/noticias/1902-projeto-sume-com-flores-comemora-o-dia-da-luta-antimanicomial" class="img-rounded">
+							<img src="/images/IMG-2026/sumecomflores20266.png" width="230" height="136" alt="" />
+						</a>
+									
+								
+				
+							
+						<h2 >
+							<a href="/index.php/noticias/1902-projeto-sume-com-flores-comemora-o-dia-da-luta-antimanicomial" >
+								Projeto Sumé com Flores comemora o Dia da Luta Antimanicomial							</a>
+						</h2>
+				
+									<p class="description">O Dia Nacional da Luta Antimanicomial, celebrado anualmente em 18 de maio e que defende os direitos das pessoas com sofrimento psíquico foi comemorado pelos monitores e participantes do Projeto Sumé com Flores, numa ação conjunta que envolveu os Caps de Sumé e de Serra Branca.
+A ação, organizada numa animada roda de conversa sobre respeito, inclusão, humanização e valorização da pessoa com...</p>									
+			</div>
+									<div class="span4">
+				
+								
+									
+						<a href="/index.php/noticias/1901-secretario-de-estado-do-meio-ambiente-e-sustentabilidade-da-paraiba-visita-o-laboratorio-de-ecologia-e-botanica-laeb-cdsa-ufcg" class="img-rounded">
+							<img src="/images/IMG-2026/secretriomeioambiente2026.png" width="230" height="136" alt="" />
+						</a>
+									
+								
+				
+							
+						<h2 >
+							<a href="/index.php/noticias/1901-secretario-de-estado-do-meio-ambiente-e-sustentabilidade-da-paraiba-visita-o-laboratorio-de-ecologia-e-botanica-laeb-cdsa-ufcg" >
+								Secretário de Estado do Meio Ambiente e Sustentabilidade da Paraíba visita o Laboratório de Ecologia e Botânica – LAEB/CDSA/UFCG 							</a>
+						</h2>
+				
+									<p class="description">A visita do Secretário de Estado do Meio Ambiente e Sustentabilidade da Paraíba, Adroilzo Fonseca, aos espaços do Laboratório de Ecologia e Botânica – LAEB/CDSA/UFCG nesta última quinta-feira (28/05/2026) representa um marco importante para o fortalecimento da pesquisa científica no estado.
+Ao conhecer de perto as linhas de investigação, projetos em andamento e coleções científicas, o...</p>									
+			</div>
+									<div class="span4">
+				
+							<div class="item-lista-chamada-secundaria first-item-lista-chamada-secundaria">
+					
+								
+							<h2 >
+								<a href="/index.php/noticias/1899-cdsa-participa-de-oficina-de-regularizacao-fundiaria-em-joao-pessoa" >
+									CDSA participa de oficina de regularização fundiária em João Pessoa								</a>
+							</h2>
+					
+											<p class="description">Nos dias 19 e 20 de maio do corrente ano, a UFCG, representada pela vice-direção do CDSA, na pessoa do professor Franklin Nóbrega, e por meio do Projeto de Extensão “Educação camponesa pelo direito à terra e à água no Cariri-PB”, coordenado pela docente Carolina Sá (UAEDUC/CDSA), em conjunto com o Sindicato de Trabalhadores Rurais de São Domingos do Cariri, representantes do município,...</p>									</div>
+					
+			</div>
+									<div class="span4">
+				
+							<div class="item-lista-chamada-secundaria">
+					
+								
+							<h2 >
+								<a href="/index.php/noticias/1898-grupo-de-pesquisa-educacao-em-solos-realiza-oficina-de-vermicompostagem-e-trilha-agroecologica-em-comunidade-rural-de-soledade" >
+									Grupo de Pesquisa Educação em Solos realiza oficina de vermicompostagem e trilha agroecológica em comunidade rural de Soledade								</a>
+							</h2>
+					
+									</div>
+					
+			</div>
+									<div class="span4">
+				
+							<div class="item-lista-chamada-secundaria last-item-lista-chamada-secundaria">
+					
+								
+							<h2 >
+								<a href="/index.php/noticias/1897-professora-do-cdsa-realiza-entrega-de-documento-para-estruturacao-do-plano-de-acao-voltado-para-recuperacao-da-nascente-do-rio-paraiba-na-serra-do-jabitaca" >
+									professora do CDSA realiza entrega de documento para estruturação do plano de ação voltado para recuperação da nascente do Rio Paraíba na serra do Jabitacá								</a>
+							</h2>
+					
+									</div>
+					
+			</div>
+					</div>
+				<div class="outstanding-footer no-bkg">
+		<a href="/index.php/noticias" class="outstanding-link">
+							<span class="text">Mais notícias.</span>
+						<span class="icon-box">                                          
+		      <i class="icon-angle-right icon-light"><span class="hide">&nbsp;</span></i>
+		    </span>
+		</a>	
+	</div>
+</div>	
+					</div>
+		<div class="row-fluid module">
+		
+	<div class="row-fluid module span4">
+						
+			<div class="row-fluid module">
+		
+	<div class="module  variacao-module-03">
+										<div class="outstanding-header">				<h2 class="outstanding-title">Informes Estudantis</h2>
+	        					
+				</div>
+			
+			<div class="tile-collection">
+					<div class="tileItem">
+			<h4>
+				<a href="/index.php/informes-estudantis/1886-rpc-profagua-atividades-complementares">
+					RPC - ProfÁgua - Atividades Complementares				</a>
+			</h4>			
+						
+				<p>12/05/2026 14h36</p>
+					</div>
+					<div class="tileItem">
+			<h4>
+				<a href="/index.php/informes-estudantis/1885-modelo-de-dissertacao-de-curso-do-profagua-ufcg">
+					Modelo de dissertação de curso do ProfÁgua - UFCG				</a>
+			</h4>			
+						
+				<p>12/05/2026 14h28</p>
+					</div>
+	</div>
+	<div class="outstanding-footer">
+		<a href="/index.php/informes-estudantis" class="outstanding-link">
+							<span class="text">Veja mais</span>
+						<span class="icon-box">                                          
+		      <i class="icon-angle-right icon-light"><span class="hide">&nbsp;</span></i>
+		    </span>
+		</a>	
+	</div>
+			
+	
+										
+			
+			</div>
+<div class="module  variacao-module-03">
+										<div class="outstanding-header">				<h2 class="outstanding-title">Licitações</h2>
+	        					
+				</div>
+			
+			<div class="tile-collection">
+					<div class="tileItem">
+			<h4>
+				<a href="/index.php/licitacoes/1896-contratacao-direta-n-35-2026">
+					Contratação Direta N° 35/2026				</a>
+			</h4>			
+						
+				<p>25/05/2026 10h27</p>
+					</div>
+					<div class="tileItem">
+			<h4>
+				<a href="/index.php/licitacoes/1876-aviso-de-contratacao-direta-n-34-2026">
+					 Aviso de Contratação Direta N° 34/2026 				</a>
+			</h4>			
+						
+				<p>05/05/2026 14h35</p>
+					</div>
+					<div class="tileItem">
+			<h4>
+				<a href="/index.php/licitacoes/1852-extrato-de-termo-aditivo-n-1-2026-uasg-158402">
+					Extrato de termo aditivo N° 1/2026 - UASG 158401				</a>
+			</h4>			
+						
+				<p>13/04/2026 14h04</p>
+					</div>
+	</div>
+	<div class="outstanding-footer">
+		<a href="/index.php/licitacoes" class="outstanding-link">
+							<span class="text">Veja mais</span>
+						<span class="icon-box">                                          
+		      <i class="icon-angle-right icon-light"><span class="hide">&nbsp;</span></i>
+		    </span>
+		</a>	
+	</div>
+			
+	
+										
+			
+			</div>
+
+	</div>
+			
+	
+							    			<div class="outstanding-footer">
+		        				
+	        	</div>
+	        				
+			
+			</div>
+<div class="module-box-01 module span4 variacao-module-01">
+										<div class="header">				<h2 class="title">Editais</h2>
+	        					
+				</div>
+			
+			<div class="tile-collection">
+					<div class="tileItem">
+			<h6>
+				<a href="/index.php/editais/1904-edital-n-01-2026-projeto-conecta-enem-cdsa">
+					Edital N° 01/2026 Projeto Conecta ENEM/CDSA				</a>
+			</h6>			
+						
+				<p>02/06/2026 13h08</p>
+					</div>
+					<div class="tileItem">
+			<h6>
+				<a href="/index.php/editais/1900-edital-pet-cdsa-n-17-2026-resultado-da-entrevista">
+					Edital PET-CDSA N° 17/2026 resultado da entrevista 				</a>
+			</h6>			
+						
+				<p>29/05/2026 11h58</p>
+					</div>
+					<div class="tileItem">
+			<h6>
+				<a href="/index.php/editais/1895-resultado-final-para-voluntario-e-bolsista-do-prolcariri-propex-2026">
+					Resultado final para voluntário e bolsista do Prolcariri - Propex 2026				</a>
+			</h6>			
+						
+				<p>22/05/2026 16h29</p>
+					</div>
+					<div class="tileItem">
+			<h6>
+				<a href="/index.php/editais/1893-edital-pet-cdsa-n-17-2026-resultado-da-prova-escrita">
+					Edital PET CDSA Nº 17/2026 Resultado da prova escrita				</a>
+			</h6>			
+						
+				<p>21/05/2026 11h13</p>
+					</div>
+					<div class="tileItem">
+			<h6>
+				<a href="/index.php/editais/1891-edital-propex-n-4-2026-resultado-final-da-selecao-para-bolsistas-dos-programas-pascar-e-educasolos">
+					 Edital PROPEX N° 4/2026 - Resultado final da seleção para bolsistas dos programas PASCAR e EDUCASOLOS				</a>
+			</h6>			
+						
+				<p>18/05/2026 13h43</p>
+					</div>
+					<div class="tileItem">
+			<h6>
+				<a href="/index.php/editais/1882-pet-inscricoes-homologadas-2026-selecao-bolsistas">
+					PET - Inscrições homologadas 2026 - seleção bolsistas				</a>
+			</h6>			
+						
+				<p>11/05/2026 11h14</p>
+					</div>
+	</div>
+	<div class="outstanding-footer">
+		<a href="/editais" class="outstanding-link">
+							<span class="text">Acesse a lista completa</span>
+						<span class="icon-box">                                          
+		      <i class="icon-angle-right icon-light"><span class="hide">&nbsp;</span></i>
+		    </span>
+		</a>	
+	</div>
+			
+	
+										
+			
+			</div>
+<div class="module-box-01 module span4 variacao-module-04">
+										<div class="header">				<h2 class="title">informes </h2>
+	        					
+				</div>
+			
+			<div class="tile-collection">
+					<div class="tileItem">
+			<h6>
+				<a href="/index.php/informes/1832-calendario-de-aulas-do-profagua-semestre-2026-1">
+					Calendário de aulas do ProfÁgua semestre 2026.2				</a>
+			</h6>			
+						
+				<p>11/03/2026 11h18</p>
+					</div>
+					<div class="tileItem">
+			<h6>
+				<a href="/index.php/informes/1831-ficha-de-matricula-profagua-2026">
+					Ficha de matrícula ProfÁgua semestre 2026.2				</a>
+			</h6>			
+						
+				<p>11/03/2026 11h12</p>
+					</div>
+					<div class="tileItem">
+			<h6>
+				<a href="/index.php/informes/1817-dados-de-escoamento-e-producao-de-sedimentos-obtidos-na-bacia-experimental-de-sao-joao-do-cariri-pb">
+					Dados de escoamento e produção de sedimentos obtidos na Bacia Experimental de São João do Cariri - PB				</a>
+			</h6>			
+						
+				<p>24/02/2026 12h10</p>
+					</div>
+					<div class="tileItem">
+			<h6>
+				<a href="/index.php/informes/1816-dados-diarios-de-monitoramento-climatologico-obtidos-na-bacia-experimental-de-sao-joao-do-cariri">
+					 Dados diários de monitoramento climatológico obtidos na Bacia Experimental de São João do Cariri - PB				</a>
+			</h6>			
+						
+				<p>24/02/2026 12h02</p>
+					</div>
+					<div class="tileItem">
+			<h6>
+				<a href="/index.php/informes/1813-probex-probex-ebt-relatorio-final-avaliacao-e-certificacao">
+					PROBEX, PROBEX EBT - Relatório final, avaliação e certificação				</a>
+			</h6>			
+						
+				<p>18/02/2026 18h02</p>
+					</div>
+					<div class="tileItem">
+			<h6>
+				<a href="/index.php/informes/1748-chamada-publica-selecao-de-agentes-de-governanca-territorial-da-paraiba">
+					CHAMADA PÚBLICA - Seleção de Agentes de Governança Territorial da Paraíba				</a>
+			</h6>			
+						
+				<p>26/09/2025 10h58</p>
+					</div>
+	</div>
+	<div class="outstanding-footer">
+		<a href="/informes" class="outstanding-link">
+							<span class="text">Acesse a lista completa</span>
+						<span class="icon-box">                                          
+		      <i class="icon-angle-right icon-light"><span class="hide">&nbsp;</span></i>
+		    </span>
+		</a>	
+	</div>
+			
+	
+										
+			
+			</div>
+
+	</div>
+<div class="row-fluid">
+		
+	<div class="span4 module">
+						
+					
+	<div class="module">
+						
+			
+
+<div class="custom"  >
+	<h5><span style="font-size: 14pt;"><strong>Reuniões CEPE/CONSAD</strong></span></h5>
+<hr /><!--p><strong><em>Reuniões do CEPE 2020:</em></strong></p>
+<p>Fevereiro: Dia 19 - 15h<br />Março: Dia 26 - 9h<br />Abril: Dia 24 - 15h<br />Maio: Dia 25 - 9h<br />Junho: Dia 16 - 15h<br /><br /><strong><em>Reuniões do CONSAD 2020: </em></strong></p>
+<p>Agosto: Dia 19 - 14h<br />Setembro: Dia 23 - 14h<br />Outubro: Dia 21 - 14h<br />Novembro: Dia 25 - 14h<br />Dezembro: Dia 11 - 16h</p-->
+<div><strong><em>Reuniões do CEPE 2026:</em></strong></div>
+<div> </div>
+<div>24/03<br />29/04<br />28/05<br />19/06</div>
+<div> </div>
+<div><em><strong>Reuniões do CONSAD 2026: </strong></em></div>
+<div> </div>
+<div> </div></div>
+			
+	
+										
+			
+			</div>
+
+				
+	
+										
+			
+			</div>
+<div class="module">
+						
+			<div class="random-image">
+	<img src="/images/phocagallery/galeriaCdsa//IMG_5725.jpg" alt="IMG_5725.jpg" width="510" height="339" /></div>
+			
+	
+										
+			
+			</div>
+
+	</div>
+		<div class="row-fluid module ">
+							<div class="outstanding-header">			 	<h2 class="outstanding-title"><span>Outros acessos</span></h2>
+			 	</div>									
+
+<div class="custom"  >
+	<p style="text-align: center;"><a href="/profagua/" target="_blank" rel="noopener noreferrer"><img src="/images/outros_acessos/logo_ProfAgua.png" width="138" height="60" /></a>     <a href="https://profsocio.ufc.br/pt/instituicoes-associadas/" target="_blank" rel="noopener noreferrer"><img src="/images/outros_acessos/profsocio-logo-horiz-2.jpg" alt="" width="120" height="56" /></a>     <a href="http://www.periodicos.capes.gov.br/" target="_blank" rel="noopener noreferrer"><img src="/images/outros_acessos/icone-periodicos.png" alt="" width="107" height="60" /></a>      <a href="http://lattes.cnpq.br/" target="_blank" rel="noopener noreferrer"><img src="/images/outros_acessos/log_lattes.png" alt="" /></a>   </p>
+<p style="text-align: center;">  <a href="/laeb" target="_blank" rel="alternate noopener noreferrer"><img src="/images/outros_acessos/logo-laeb.png" alt="" width="110" height="54" /></a>    <a href="https://www.youtube.com/channel/UC-ssSKK8p9OTn36KYrzwB2w" target="_blank" rel="noopener noreferrer"><img src="/images/outros_acessos/laeb-cerdes-youtube.jpg" width="100" /></a> <a href="/laeb/grupo-de-pesquisa-cerdes/" target="_blank" rel="noopener noreferrer"><img src="/images/outros_acessos/LOGOMARCA-FINAL---CERDES-FINAL.jpg" width="105" height="72" /></a>   <a href="http://la.ufcg.edu.br/" target="_blank" rel="alternate noopener noreferrer"><img src="/images/outros_acessos/logolab.jpg" alt="" width="132" height="49" /></a>     <img src="/images/outros_acessos/logo-lasol.png" width="120" /></p>
+<p style="text-align: center;">   <img src="/images/outros_acessos/logo-pascar.png" alt="" width="178" height="71" /><img src="/images/outros_acessos/MatutandoSolosEAgroecologia.jpeg" width="100" /><img src="/images/outros_acessos/usinasolos.jpeg" alt="" width="116" height="72" /><img src="/images/outros_acessos/SumeComFlores.jpeg" width="90" />        </p>
+<p style="text-align: center;"><img src="/images/banners/Logo-LAFHID.jpg" alt="" width="166" height="44" /> <img src="/images/outros_acessos/logo-pibid-diversidade.png" alt="" />   <span style="color: #ffffff;">.<img src="/images/outros_acessos/imprensanacional.png" alt="" width="72" height="72" />.. </span></p>
+<p style="text-align: center;">          <a href="https://www.sei.ufcg.edu.br/" target="_blank" rel="alternate noopener noreferrer"><img src="/images/outros_acessos/logo_sei_producao_piscando.gif" alt="" width="94" height="63" /></a>   <a href="/publicacoes/category/27-diversos.html?download=61:sei-procedimento-para-abertura-do-processo-de-diarias-e-passagens" target="_blank" rel="alternate noopener noreferrer"><img src="/images/outros_acessos/sei_Viagem-Servidor-no-Pais-Abertura-de-Processo.jpg" alt="" width="137" height="60" /></a>    <a href="http://www.transparencia.gov.br/" target="_blank" rel="noopener noreferrer"><img src="/images/outros_acessos/banner-transparencia.gif" alt="" width="107" height="50" /></a>   <a href="http://www.virtual.ufcg.edu.br/" target="_blank" rel="noopener noreferrer"><img src="/images/outros_acessos/figura_20151031_106.jpg" width="103" height="54" /></a></p>
+<p style="text-align: center;">       <a href="http://accountgp.com.br/home/" target="_blank" rel="noopener noreferrer"><img src="/images/outros_acessos/cabecalho24.jpg" width="165" /></a>    <img src="/images/outros_acessos/logo_produp.png" width="120" />     <img src="/images/outros_acessos/logo-pet-gestao.png" alt="" /></p>
+<p style="text-align: center;"><img src="/images/outros_acessos/educasolos.jpeg" alt="" width="94" height="84" /> <img src="/images/outros_acessos/resolo.jpeg" alt="" width="80" height="68" /><img src="/images/outros_acessos/SoloNaEscolaUFCG.jpeg" width="170" /><img src="/images/outros_acessos/ProjetoGeotinta.jpeg" width="130" /></p></div>
+	
+					</div>
+		
+
+                            
+                            <span class="hide">Fim do conteúdo da página</span>
+                        </section>
+                    </div>
+                    <!-- fim #content.span9 -->
+                </div>
+                <!-- fim .row-fluid -->
+            </div>
+            <!-- fim .container -->
+        </main>
+        <footer>
+            <div class="footer-atalhos">
+                <div class="container">
+                    <div class="pull-right voltar-ao-topo"><a href="#portal-siteactions"><i class="icon-chevron-up"></i>&nbsp;Voltar para o topo</a></div>
+                </div>
+            </div>
+            <div class="container container-menus">
+                <div id="footer" class="row footer-menus">
+                    <span class="hide">Início da navegação de rodapé</span>
+                    	
+		<div class="">		
+			<nav class="row  nav">
+								<b>Universidade Federal de Campina Grande</b><br>
+<b>Centro de Desenvolvimento Sustentável do Semiárido</b><br>
+Rua Luiz Grande, S/N, Frei Damião, Sumé, Paraíba<br>CEP 58540-000<br>
+Telefone: (83) 3353-1850<br>
+E-mail: direcaocdsa@setor.ufcg.edu.br			</nav>					
+		</div>
+	
+	
+                    <span class="hide">Fim da navegação de rodapé</span>
+                </div>
+                <!-- fim .row -->
+            </div>
+            <!-- fim .container -->
+            <div class="footer-logos">
+                <div class="container">
+                                            <a href="http://www.acessoainformacao.gov.br/" class="logo-acesso pull-left"><img src="/templates/padraogoverno01/images/acesso-a-informacao.png" alt="Acesso a Informação"></a>
+                                                                <!-- separador para fins de acessibilidade --><span class="hide">&nbsp;</span><!-- fim separador para fins de acessibilidade -->
+                        <a href="http://www.brasil.gov.br/" class="brasil pull-right"><img src="/templates/padraogoverno01/images/brasil.png" alt="Brasil - Governo Federal"></a>
+                                    </div>
+            </div>
+            <div class="footer-ferramenta">
+                <div class="container">
+                    <p>Desenvolvido com o CMS de c&oacute;digo aberto <a href="http://www.joomla.org">Joomla</a></p>                </div>
+            </div>
+            <div class="footer-atalhos visible-phone">
+                <div class="container">
+                    <span class="hide">Fim do conteúdo da página</span>
+                    <div class="pull-right voltar-ao-topo"><a href="#portal-siteactions"><i class="icon-chevron-up"></i>&nbsp;Voltar para o topo</a></div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- fim div#wrapper -->
+    <!-- scripts principais do template -->
+    		<script src="/templates/padraogoverno01/bootstrap/js/bootstrap.min.js" type="text/javascript"></script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+	    <script src="/templates/padraogoverno01/js/jquery.cookie.js" type="text/javascript"></script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+	    <script src="/templates/padraogoverno01/js/template.js" type="text/javascript"></script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+		    		<script src="https://barra.brasil.gov.br/barra.js?cor=verde" type="text/javascript"></script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+		        <!-- debug -->
+    
+    </body>
+</html>

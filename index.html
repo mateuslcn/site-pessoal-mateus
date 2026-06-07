@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal website of Mateus Lucena. Reflections on IT management, career, and behavior in the information technology industry.">
+    <title>Mateus Lucena | Management, Technology & Behavior</title>
+    <!-- Leaflet CSS & JS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <!-- KaTeX CSS & JS for LaTeX Math rendering -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="style.css?v=2.0.6">
+</head>
+<body>
+
+    <!-- Skip Link for Accessibility -->
+    <a href="#main-content" style="position: absolute; top: -100px; left: 0; background: var(--color-accent); color: white; padding: 10px; z-index: 10000; transition: top 0.3s;" onfocus="this.style.top='0'" onblur="this.style.top='-100px'">Skip to main content</a>
+
+    <!-- Main Header -->
+    <header>
+        <div class="container">
+            <a href="#home" class="logo nav-trigger" id="nav-logo" data-target="home">
+                <img src="images/logo.png" alt="Mateus Lucena Logo" class="logo-avatar">
+                <span>Mateus Lucena</span>
+            </a>
+            
+            <!-- Hamburger Menu for Mobile -->
+            <button class="menu-toggle" id="menu-toggle" aria-label="Open navigation menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <!-- Navigation Links -->
+            <nav id="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-tab active" data-target="home">Home</a></li>
+                    <li><a href="#articles" class="nav-tab" data-target="articles">Articles</a></li>
+                    <li><a href="#publications" class="nav-tab" data-target="publications">Publications</a></li>
+                    <li><a href="#services" class="nav-tab" data-target="services">Services</a></li>
+                    <li><a href="#atelier" class="nav-tab" data-target="atelier">Atelier</a></li>
+                    <li><a href="#about" class="nav-tab" data-target="about">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        
+        <!-- Home Section -->
+        <section id="home" class="section active">
+            <!-- Carousel Controls -->
+            <button class="carousel-control carousel-control-left" id="carousel-prev" aria-label="Previous image">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7" /></svg>
+            </button>
+            <button class="carousel-control carousel-control-right" id="carousel-next" aria-label="Next image">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7" /></svg>
+            </button>
+            <div class="container">
+                <div class="hero">
+                    <div class="hero-content">
+                        <span class="hero-subtitle">Management & Technology</span>
+                        <h1 class="hero-title">Reflections on leadership, career, and behavior in IT.</h1>
+                        <p class="hero-description">
+                            Hello, I'm Mateus Lucena. I write about the art of managing people and projects in the information technology industry, exploring the human dynamics behind the code.
+                        </p>
+                        <div class="hero-cta">
+                            <a href="#about" class="btn btn-primary nav-trigger" data-target="about">My Trajectory</a>
+                            <a href="#articles" class="btn btn-secondary nav-trigger" data-target="articles">Read Articles</a>
+                        </div>
+                    </div>
+                    <div class="hero-image-container">
+                        <img src="https://substack-post-media.s3.amazonaws.com/public/images/09dbaa45-d659-4ee1-8c3e-af49abfd0b2b_640x640.jpeg" alt="Mateus Lucena Photo" class="hero-profile-photo">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Articles Section -->
+        <section id="articles" class="section">
+            <div class="tab-banner">
+                <div class="container">
+                    <h1 class="banner-title">Published Articles & Posts</h1>
+                    <p class="banner-subtitle">Weekly essays on software engineering management, corporate communication, and professional growth.</p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="articles-layout">
+                    <!-- Sidebar Column -->
+                    <aside class="articles-sidebar">
+                        <!-- Status Box -->
+                        <div class="status-box">
+                            <h3 id="status-showing">Showing 1-4 of 41 items</h3>
+                            <p>Browse by filter or use search below</p>
+                        </div>
+
+                        <!-- Browse By Box -->
+                        <div class="sidebar-card">
+                            <h3 class="sidebar-card-title">Browse By</h3>
+                            <div class="filter-buttons">
+                                <button class="filter-btn active" data-filter="all">
+                                    <span class="filter-btn-text">All Articles & Posts</span>
+                                    <span class="filter-badge" id="badge-all">41</span>
+                                </button>
+                                <button class="filter-btn" data-filter="under5">
+                                    <span class="filter-btn-text">Under 5 Min</span>
+                                    <span class="filter-badge" id="badge-under5">33</span>
+                                </button>
+                                <button class="filter-btn" data-filter="over5">
+                                    <span class="filter-btn-text">5+ Min Reads</span>
+                                    <span class="filter-badge" id="badge-over5">8</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Search Box -->
+                        <div class="sidebar-card">
+                            <div class="search-box-wrapper">
+                                <svg class="search-box-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                                <input type="text" id="search-input" class="search-box-input" placeholder="Search All Articles and Posts">
+                            </div>
+                            <p class="search-help-text">Full-text search with filters across all <span id="search-count-total">41</span> items</p>
+                        </div>
+                    </aside>
+
+                    <!-- Content Column -->
+                    <div class="articles-content-area">
+                        <!-- Articles Grid (injected via JS) -->
+                        <div class="articles-grid" id="articles-grid">
+                            <!-- Cards will be dynamically loaded -->
+                        </div>
+
+                        <!-- Pagination Row -->
+                        <div class="pagination-row" id="pagination-row">
+                            <!-- Pagination buttons injected dynamically -->
+                        </div>
+
+                        <!-- Message when no articles match -->
+                        <div class="no-results" id="no-results">
+                            No articles found matching your search query.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Single Post Reader Section -->
+        <section id="single-post" class="section">
+            <div class="container">
+                <div class="reader-container" id="reader-container">
+                    <!-- Dynamic article content injected via JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Publications Section -->
+        <section id="publications" class="section">
+            <div class="tab-banner">
+                <div class="container">
+                    <h1 class="banner-title">Published Papers & Thesis</h1>
+                    <p class="banner-subtitle">Academic research contributions in software engineering, intelligent automation, and cyber-physical systems.</p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="publications-grid" id="publications-grid">
+                    <!-- Cards will be dynamically loaded via JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="section">
+            <div class="tab-banner">
+                <div class="container">
+                    <h1 class="banner-title">Services</h1>
+                    <p class="banner-subtitle">Engineering management consulting, career mentoring, and scaled AI adoption for organizations of all levels.</p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="services-grid">
+                    <!-- Left Sidebar Menu -->
+                    <aside class="services-sidebar">
+                        <div class="services-menu-card">
+                            <h3>Services</h3>
+                            <ul class="services-menu-list">
+                                <li><a href="#service-ai-adoption" class="services-menu-item active" data-target="service-ai-adoption">AI Adoption at Scale</a></li>
+                                <li><a href="#service-sw-mgmt" class="services-menu-item" data-target="service-sw-mgmt">Software Development</a></li>
+                                <li><a href="#service-eng-mgmt" class="services-menu-item" data-target="service-eng-mgmt">Engineering Management</a></li>
+                                <li><a href="#service-career-mentoring" class="services-menu-item" data-target="service-career-mentoring">Career Mentoring</a></li>
+                                <li><a href="#service-pm-classes" class="services-menu-item" data-target="service-pm-classes">Engineering Classes</a></li>
+                                <li><a href="#service-get-started" class="services-menu-item" data-target="service-get-started">Get Started</a></li>
+                            </ul>
+                        </div>
+                    </aside>
+
+                    <!-- Right Content Area -->
+                    <div class="services-content">
+                        <!-- Service 1: AI Adoption at Scale -->
+                        <div id="service-ai-adoption" class="service-block-card">
+                            <div class="service-header">
+                                <div class="service-icon-wrapper">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 21m0 0l-.813-5.096m.813 5.096a18.665 18.665 0 01-6.185-7.386m19.81 7.386a18.665 18.665 0 00-6.185-7.386m-5.14-5.023L12 3m0 0l1.328 2.991M12 3L10.672 5.991M12 3h.008M13.282 5.991A18.665 18.665 0 0118.426 12m-6.418-6.009a18.665 18.665 0 00-5.14 6.009" />
+                                    </svg>
+                                </div>
+                                <h2>AI Adoption at Scale</h2>
+                            </div>
+                            <div class="service-body">
+                                <p>Many organizations face a common hurdle: AI pilots that fail to translate into clear business value. Teams get caught up in superficial usage metrics rather than real, scaled engineering outcomes. I work with organizations to establish secure governance, structured patterns, and sustainable AI adoption models.</p>
+                                
+                                <p class="service-quote">
+                                    "The goal isn't just utilizing AI tools, it's maintaining the rigorous software engineering discipline that creates real impact."
+                                </p>
+
+                                <p>By focusing on cultural adaptation alongside technology implementation, we build structures where developers collaborate safely with AI to deliver clean, maintainable, and high-impact software systems.</p>
+                                
+                                <h3>What I Bring</h3>
+                                <ul class="service-points">
+                                    <li><strong>RPI Coaching for Agentic Coding:</strong> Implementing Research, Plan, and Implement frameworks specifically tailored for AI-driven development.</li>
+                                    <li><strong>Organizational Governance:</strong> Empowering collaborators across all levels and functions to design, build, and orchestrate their own robust, interconnected internal systems using agentic AI.</li>
+                                    <li><strong>Practical Developer Up-skilling:</strong> Training engineering teams in prompt precision and agentic system orchestration.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Service 2: Software Development -->
+                        <div id="service-sw-mgmt" class="service-block-card">
+                            <div class="service-header">
+                                <div class="service-icon-wrapper">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M14.25 9.75L16.5 12l-2.25 2.25m-4.5 0L7.5 12l2.25-2.25M6 20.25h12A2.25 2.25 0 0020.25 18V6A2.25 2.25 0 0018 3.75H6A2.25 2.25 0 003.75 6v12A2.25 2.25 0 006 20.25z" />
+                                    </svg>
+                                </div>
+                                <h2>Software Development</h2>
+                            </div>
+                            <div class="service-body">
+                                <p>A successful development pipeline relies on aligning human dynamics with technical rigor. I consult on development lifecycle optimization, agile engineering practices, testing standards, and organizational restructuring that removes friction.</p>
+                                
+                                <p class="service-quote">
+                                    "High-performing engineering teams are built by designing transparent communication channels and clear ownership boundaries."
+                                </p>
+
+                                <p>I help organizations streamline execution, shorten time-to-market, and implement metrics that accurately reflect product stability.</p>
+                                
+                                <h3>What I Bring</h3>
+                                <ul class="service-points">
+                                    <li><strong>Process Optimization:</strong> Refining legacy structures and integrating AI-assisted workflows to support fast-paced, high-quality deployments.</li>
+                                    <li><strong>Quality & Test Alignment:</strong> Incorporating automated verification pipelines, CI/CD, and AI-augmented testing standards.</li>
+                                    <li><strong>Empathetic Team Scaling:</strong> Establishing psychological safety, clear ownership, and effective collaboration in hybrid human-AI teams.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Service 3: Engineering Management -->
+                        <div id="service-eng-mgmt" class="service-block-card">
+                            <div class="service-header">
+                                <div class="service-icon-wrapper">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                    </svg>
+                                </div>
+                                <h2>Engineering Management</h2>
+                            </div>
+                            <div class="service-body">
+                                <p>Managing multi-disciplinary engineering projects requires aligning technical precision across diverse domains. I coordinate high-performance teams to design, plan, and execute engineering workloads that integrate digital solutions with physical infrastructure.</p>
+                                
+                                <p class="service-quote">
+                                    "Effective management bridges the gap between hardware, software, and physical construction to deliver unified systems."
+                                </p>
+
+                                <p>I ensure that complex projects are delivered on time and within scope by enforcing strict quality assurance, regulatory compliance, and cross-functional collaboration throughout the project lifecycle.</p>
+                                
+                                <h3>What I Bring</h3>
+                                <ul class="service-points">
+                                    <li><strong>Digital Products & Software:</strong> Extensive experience directing software projects, lifecycle development, and AI integrations for scalable systems running in production 24 hours per day, 7 days per week (24/7).</li>
+                                    <li><strong>Electrification & Utilities:</strong> Managing electrical power distribution systems, grid connections, and electrification infrastructure workloads.</li>
+                                    <li><strong>Civil Works & Operations:</strong> Planning, coordinating, and supervising site operations, construction compliance, and structural engineering layouts.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Service 4: Career Mentoring -->
+                        <div id="service-career-mentoring" class="service-block-card">
+                            <div class="service-header">
+                                <div class="service-icon-wrapper">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.005 9.005 0 00-6-2.24c-2.3 0-4.4.83-6 2.24M12 13a4 4 0 100-8 4 4 0 000 8z" />
+                                    </svg>
+                                </div>
+                                <h2>Career Mentoring</h2>
+                            </div>
+                            <div class="service-body">
+                                <p>Career progression is a deliberate engineering problem. It requires clear models, behavioral awareness, and active communication to build authority and step into senior leadership roles.</p>
+                                
+                                <p class="service-quote">
+                                    "Professional acceleration is about expanding your sphere of influence and communicating technical excellence to business stakeholders."
+                                </p>
+
+                                <p>I mentor individual contributors making the transition to management, coaching them on team leadership, behavioral communication, and strategic career moves.</p>
+                                
+                                <h3>What I Bring</h3>
+                                <ul class="service-points">
+                                    <li><strong>Leadership Onboarding:</strong> Guiding tech professionals as they transition into delegation, feedback, and mid management roles in AI-driven environments.</li>
+                                    <li><strong>Strategic Intellectual Property & Writing:</strong> Leveraging technical writing, patents, publications, and AI-era intellectual assets as tools for global visibility.</li>
+                                    <li><strong>Assertive Communication:</strong> Preparing professionals to navigate critical corporate conversations and alignments.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Service 5: Engineering Classes -->
+                        <div id="service-pm-classes" class="service-block-card">
+                            <div class="service-header">
+                                <div class="service-icon-wrapper">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
+                                    </svg>
+                                </div>
+                                <h2>Engineering Classes</h2>
+                            </div>
+                            <div class="service-body">
+                                <p>I deliver comprehensive classes and training sessions designed for students, researchers, and professional teams. My teaching spans foundational engineering subjects, specialized technical areas, software architecture, and modern management frameworks.</p>
+                                
+                                <p class="service-quote">
+                                    "Education in engineering is about building a solid foundation in basic sciences while continuously mastering modern design, control, and management practices."
+                                </p>
+
+                                <p>My classes are tailored to bridge academic theory and industry reality, ensuring a clear path from mathematical modeling to practical operational application.</p>
+                                
+                                <h3>What I Bring</h3>
+                                <ul class="service-points">
+                                    <li><strong>Basic Cycle & Programming:</strong> Instruction in fundamental engineering disciplines, including Calculus, linear algebra, and introductory programming/logic.</li>
+                                    <li><strong>Electronics & Control Systems:</strong> Specialized topics covering analog and digital electronics, instrumentation, and control system design/stability.</li>
+                                    <li><strong>Software Architecture:</strong> Practical classes on software engineering design patterns, system architecture, AI-assisted coding practices, and clean code principles.</li>
+                                    <li><strong>Modern Project Management:</strong> Training in advanced agile frameworks, AI-augmented management tools, Management 3.0 principles, and hybrid project methodologies.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Get Started Block - Dark Highlighted Card -->
+                        <div id="service-get-started" class="service-get-started-section">
+                            <h2 class="get-started-title">Get Started</h2>
+                            <div class="get-started-grid">
+                                <div class="get-started-card enterprise">
+                                    <h3>Brazilian Incentives for R&D</h3>
+                                    <p>Leverage federal incentives for tech innovation. Contact me directly to discuss your project and click below to explore Eldorado Institute's capabilities</p>
+                                    <a href="https://www.eldorado.org.br/en/" target="_blank" rel="noopener noreferrer" class="get-started-btn">Explore Eldorado Institute</a>
+                                    <div class="card-contact-email">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                        </svg>
+                                        <a href="mailto:mateus.lucena@eldorado.org.br">mateus.lucena@eldorado.org.br</a>
+                                    </div>
+                                </div>
+                                <div class="get-started-card direct">
+                                    <h3>Connect Directly</h3>
+                                    <p>For speaking engagements, general inquiries, or to follow or connect with me directly.</p>
+                                    <div class="get-started-buttons">
+                                        <a href="#about" class="get-started-btn nav-trigger" data-target="about" id="get-started-contact-btn">Contact Me</a>
+                                        <a href="https://linkedin.com/in/mateuslcn/" target="_blank" rel="noopener noreferrer" class="get-started-btn secondary">LinkedIn</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="tab-banner">
+                <div class="container">
+                    <h1 class="banner-title">About Me</h1>
+                    <p class="banner-subtitle">My trajectory, core engineering management values, and professional pillars.</p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="about-grid">
+                    
+                    <aside class="about-sidebar">
+                        <div class="profile-card">
+                            <img src="https://substack-post-media.s3.amazonaws.com/public/images/09dbaa45-d659-4ee1-8c3e-af49abfd0b2b_640x640.jpeg" alt="Mateus Lucena Profile Photo">
+                            <h3>Mateus Lucena</h3>
+                            <p class="profile-title">Engineering Manager & Writer</p>
+                            
+                            <div class="profile-meta">
+                                <div class="meta-item">
+                                    <strong>Focus:</strong> <span>Management & Career</span>
+                                </div>
+                                 <div class="meta-item">
+                                     <strong>Publishes actively:</strong> <span>Substack</span>
+                                 </div>
+                                <div class="meta-item">
+                                    <strong>Launched:</strong> <span>August 2025</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about-map-card">
+                            <div id="about-map"></div>
+                            <button id="expand-map-btn" class="expand-map-btn" aria-label="Expand Map">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+                            </button>
+                        </div>
+                        <div class="about-map-desc">
+                            <strong>Trajectory Map</strong><br>
+                            This map highlights key personal milestones. Every movement was an opportunity for growth. I'm grateful for the people I met and for how they shape what I believe in.
+                        </div>
+                    </aside>
+                    <div class="about-bio">
+                        <h3 class="about-timeline-title" style="margin-top: 0 !important;">Introduction</h3>
+                        <p>I am an engineer who enjoys writing and drawing. I build systems with people, shape ideas, and craft stories with words.</p>
+                        
+                        <p>I am also excited about move into the education market. If you are interested in exchanging ideas or collaborating, please feel free to connect.</p>
+                        
+                        <h3 class="about-timeline-title">Education Timeline</h3>
+                        <div class="about-timeline-container">
+                            <!-- Education Column -->
+                            <div class="timeline-column">
+                                <h4 class="timeline-column-title">EDUCATION</h4>
+                                <div class="timeline-items">
+                                    <div class="timeline-item">
+                                        <div class="timeline-icon-wrapper">
+                                            <svg class="timeline-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                                                <path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"/>
+                                            </svg>
+                                        </div>
+                                        <div class="timeline-content">
+                                            <h5 class="timeline-item-title">University of São Paulo (USP)</h5>
+                                            <p class="timeline-item-desc">MBA in Project Management (2025)</p>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="timeline-icon-wrapper">
+                                            <svg class="timeline-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                                                <path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"/>
+                                            </svg>
+                                        </div>
+                                        <div class="timeline-content">
+                                            <h5 class="timeline-item-title">Federal University of Campina Grande (UFCG)</h5>
+                                            <p class="timeline-item-desc">Master's Degree in Electrical Engineering (2019)</p>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="timeline-icon-wrapper">
+                                            <svg class="timeline-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                                                <path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"/>
+                                            </svg>
+                                        </div>
+                                        <div class="timeline-content">
+                                            <h5 class="timeline-item-title">Federal University of Campina Grande (UFCG)</h5>
+                                            <p class="timeline-item-desc">Bachelor's Degree in Electrical Engineering (2017)</p>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="timeline-icon-wrapper">
+                                            <svg class="timeline-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                                                <path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"/>
+                                            </svg>
+                                        </div>
+                                        <div class="timeline-content">
+                                            <h5 class="timeline-item-title">Universitat Politècnica de València (UPV)</h5>
+                                            <p class="timeline-item-desc">Academic Exchange in Electrical Engineering (2012/2013)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Certification Column -->
+                            <div class="timeline-column">
+                                <h4 class="timeline-column-title">CERTIFICATION</h4>
+                                <div class="timeline-items">
+                                    <div class="timeline-item">
+                                        <div class="timeline-icon-wrapper">
+                                            <svg class="timeline-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                                                <circle cx="12" cy="8" r="6"/>
+                                                <path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/>
+                                            </svg>
+                                        </div>
+                                        <div class="timeline-content">
+                                            <h5 class="timeline-item-title">Caroli.org</h5>
+                                            <p class="timeline-item-desc">Lean Inception facilitator (2023)</p>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="timeline-icon-wrapper">
+                                            <svg class="timeline-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                                                <circle cx="12" cy="8" r="6"/>
+                                                <path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/>
+                                            </svg>
+                                        </div>
+                                        <div class="timeline-content">
+                                            <h5 class="timeline-item-title">Scrum.org</h5>
+                                            <p class="timeline-item-desc">Professional Scrum Product Owner (2022)</p>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item">
+                                         <div class="timeline-icon-wrapper">
+                                             <svg class="timeline-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                                                 <circle cx="12" cy="12" r="10"/>
+                                                 <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                                                 <rect x="7" y="9.5" width="10" height="5" rx="1" fill="var(--color-bg-secondary)" stroke="currentColor" stroke-width="1.5"/>
+                                                 <text x="12" y="13.2" font-size="3.5" font-family="system-ui, sans-serif" font-weight="bold" text-anchor="middle" fill="currentColor">DELE</text>
+                                             </svg>
+                                         </div>
+                                         <div class="timeline-content">
+                                             <h5 class="timeline-item-title">Cervantes Institute</h5>
+                                             <p class="timeline-item-desc">Diploma of Spanish - DELE C1 (2016)</p>
+                                         </div>
+                                     </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Languages Section -->
+                        <div class="about-languages-section">
+                            <h3 class="languages-title">Languages</h3>
+                            <div class="languages-flags">
+                                <div class="flag-item">
+                                    <svg class="flag-svg" viewBox="0 0 24 24">
+                                        <circle cx="12" cy="12" r="12" fill="#009739"/>
+                                        <path d="M12 3l8 9-8 9-8-9 8-9z" fill="#FFDF00"/>
+                                        <circle cx="12" cy="12" r="4.5" fill="#002776"/>
+                                        <path d="M7.5 12a4.5 4.5 0 0 0 9 0" fill="none" stroke="#FFFFFF" stroke-width="0.5"/>
+                                    </svg>
+                                    <span class="flag-label">PT</span>
+                                </div>
+                                <div class="flag-item">
+                                    <svg class="flag-svg" viewBox="0 0 24 24">
+                                        <circle cx="12" cy="12" r="12" fill="#C60B1E"/>
+                                        <rect x="0" y="6" width="24" height="12" fill="#FFC400"/>
+                                        <rect x="6" y="9" width="3" height="5" fill="#C60B1E" rx="0.5"/>
+                                    </svg>
+                                    <span class="flag-label">ES</span>
+                                </div>
+                                <div class="flag-item">
+                                    <svg class="flag-svg" viewBox="0 0 24 24">
+                                        <circle cx="12" cy="12" r="12" fill="#012169"/>
+                                        <path d="M2.5 2.5l19 19M21.5 2.5l-19 19" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round"/>
+                                        <path d="M2.5 2.5l19 19M21.5 2.5l-19 19" stroke="#C8102E" stroke-width="1.2" stroke-linecap="round"/>
+                                        <path d="M12 0v24M0 12h24" stroke="#FFFFFF" stroke-width="4.5"/>
+                                        <path d="M12 0v24M0 12h24" stroke="#C8102E" stroke-width="2.7"/>
+                                    </svg>
+                                    <span class="flag-label">EN</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="about-contact" class="about-contact-section" style="margin-top: 3rem;">
+                            <h3 style="margin-bottom: 0.5rem;">Connect With Me</h3>
+                            <p style="color: var(--color-text-secondary); margin-bottom: 1.5rem; font-size: 1rem; line-height: 1.5;">
+                                Follow my Substack publications. Connect on social networks to discuss technology and leadership.
+                            </p>
+                            <div class="social-links" style="justify-content: flex-start; gap: 0.75rem;">
+                                <!-- Substack -->
+                                <a href="https://mateuslucena.substack.com/" target="_blank" rel="noopener noreferrer" class="social-btn">
+                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M22.539 8.242H1.46V2.25h21.079v5.992zm0 4.673H1.46V11.23h21.079v1.685zm0 1.685H1.46v9.123L12 18.061l10.539 5.664V14.6z"/>
+                                    </svg>
+                                    <span>Substack</span>
+                                </a>
+
+                                <!-- LinkedIn -->
+                                <a href="https://linkedin.com/in/mateuslcn/" target="_blank" rel="noopener noreferrer" class="social-btn">
+                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M22.23 0H1.77C.8 0 0 .77 0 1.72v20.56C0 23.23.8 24 1.77 24h20.46c.98 0 1.77-.77 1.77-1.72V1.72C24 .77 23.2 0 22.23 0zM7.12 20.45H3.56V9H7.12v11.45zM5.34 7.43c-1.14 0-2.06-.92-2.06-2.06 0-1.14.92-2.06 2.06-2.06 1.14 0 2.06.92 2.06 2.06 0 1.14-.92 2.06-2.06 2.06zm15.11 13.02h-3.56v-5.6c0-1.34-.03-3.05-1.86-3.05-1.86 0-2.14 1.45-2.14 2.95v5.7H9.33V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29z"/>
+                                    </svg>
+                                    <span>LinkedIn</span>
+                                </a>
+
+                                <!-- Instagram -->
+                                <a href="https://instagram.com/mateuslcn/" target="_blank" rel="noopener noreferrer" class="social-btn">
+                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/>
+                                    </svg>
+                                    <span>Instagram</span>
+                                </a>
+
+                                <!-- X / Twitter -->
+                                <a href="https://x.com/mateuslcn" target="_blank" rel="noopener noreferrer" class="social-btn">
+                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                                    </svg>
+                                    <span>X</span>
+                                </a>
+
+                                <!-- Letterboxd -->
+                                <a href="https://letterboxd.com/mateuslcn/" target="_blank" rel="noopener noreferrer" class="social-btn">
+                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.28 10.13a3.8 3.8 0 1 0 0 3.74m3.84-3.74a3.8 3.8 0 1 0 0 3.74m3.85-3.74a3.8 3.8 0 1 0 0 3.74M12 0a12 12 0 1 0 0 24 12 12 0 0 0 0-24z"/>
+                                    </svg>
+                                    <span>Letterboxd</span>
+                                </a>
+
+                                <!-- Google Scholar -->
+                                <a href="https://scholar.google.com.br/citations?user=oERfk7UAAAAJ&hl=pt-BR" target="_blank" rel="noopener noreferrer" class="social-btn">
+                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.838 3.94A8 8 0 0 1 12 9a8 8 0 0 1 7.162 4.44L24 9.5z"/>
+                                    </svg>
+                                    <span>Google Scholar</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Atelier Section -->
+        <section id="atelier" class="section">
+            <div class="tab-banner">
+                <div class="container">
+                    <h1 class="banner-title">Atelier</h1>
+                    <p class="banner-subtitle">Explore my mom’s original oil paintings and handcrafted textile art</p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="atelier-container">
+                    
+                    <!-- Artist Story Section -->
+                    <div class="atelier-artist-card">
+                        <h2 class="atelier-section-title">The Artist & The Story</h2>
+                        <div class="atelier-artist-grid">
+                            <div class="atelier-artist-photo">
+                                <img src="images/atelier_artist.jpg" alt="My Mom Portrait">
+                            </div>
+                            <div class="atelier-artist-bio">
+                                <h3>Meet My Mom Conceição Costa</h3>
+                                <p>A retired public health social worker based in João Pessoa, Brazil, my mom (66) found in art a sanctuary for her emotions and a source of quality of life. Her hands, which spent decades dedicated to caring for others, now give life to vibrant oil canvases, delicate crochet, and intricate patchwork, as her retired life beautifully merges into nuances of color, texture, and form.</p>
+                                <blockquote class="atelier-quote">
+                                    "In art, I rest my emotions and find inspiration to live."
+                                </blockquote>
+                                <div class="atelier-social-links">
+                                    <a href="https://br.pinterest.com/cflcosta5/_created/" target="_blank" rel="noopener noreferrer" class="atelier-social-icon" aria-label="Pinterest Profile">
+                                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 0a12 12 0 0 0-4.37 23.17c-.07-.63-.13-1.6.03-2.29l1.42-6.02s-.36-.72-.36-1.78c0-1.67.97-2.92 2.18-2.92 1.03 0 1.52.77 1.52 1.69 0 1.03-.66 2.58-1 4.02-.28 1.2.6 2.18 1.78 2.18 2.14 0 3.78-2.26 3.78-5.52 0-2.89-2.07-4.91-5.04-4.91-3.44 0-5.46 2.58-5.46 5.25 0 1.04.4 2.16.9 2.76a.33.33 0 0 1 .08.34l-.34 1.38c-.06.22-.18.27-.4.17-1.53-.71-2.48-2.94-2.48-4.73 0-3.86 2.81-7.41 8.09-7.41 4.25 0 7.55 3.03 7.55 7.07 0 4.22-2.66 7.62-6.36 7.62-1.24 0-2.4-.64-2.8-1.4l-.76 2.9c-.28 1.05-1.02 2.37-1.52 3.18A12 12 0 1 0 12 0z"/></svg>
+                                    </a>
+                                    <a href="https://www.instagram.com/conceicaoflcosta/" target="_blank" rel="noopener noreferrer" class="atelier-social-icon" aria-label="Instagram Profile">
+                                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Collection Section -->
+                    <div class="atelier-collection-card">
+                        <h2 class="atelier-section-title">The Collection</h2>
+                        <div class="atelier-collection-grid">
+                            <!-- Card 1: Tardes de Sol (São João) -->
+                            <div class="atelier-piece-card" data-piece-id="coqueirinho">
+                                <div class="atelier-piece-img-container">
+                                    <img src="images/atelier_coqueirinho.jpg" alt="Tardes de Sol (São João) painting by my mom">
+                                    <div class="atelier-piece-overlay">
+                                        <button class="atelier-zoom-btn" aria-label="View Full Size">Zoom</button>
+                                    </div>
+                                </div>
+                                <div class="atelier-piece-info">
+                                    <h4 class="atelier-piece-title">Tardes de Sol (São João)</h4>
+                                    <p class="atelier-piece-medium">Oil on Canvas (50x60cm)</p>
+                                    <div class="atelier-piece-footer">
+                                        <span class="atelier-badge badge-available">$250.00</span>
+                                        <button class="atelier-view-link-btn">View Full Size</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Card 2: Frida Kahlo -->
+                            <div class="atelier-piece-card" data-piece-id="frida">
+                                <div class="atelier-piece-img-container">
+                                    <img src="images/atelier_frida.jpg" alt="Retalhos de Memória patchwork quilt by my mom">
+                                    <div class="atelier-piece-overlay">
+                                        <button class="atelier-zoom-btn" aria-label="View Full Size">Zoom</button>
+                                    </div>
+                                </div>
+                                <div class="atelier-piece-info">
+                                    <h4 class="atelier-piece-title">Retalhos de Memória</h4>
+                                    <p class="atelier-piece-medium">Patchwork Quilt (160x220cm)</p>
+                                    <div class="atelier-piece-footer">
+                                        <span class="atelier-badge badge-available">$320.00</span>
+                                        <button class="atelier-view-link-btn">View Full Size</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Card 3: Girassol -->
+                            <div class="atelier-piece-card" data-piece-id="girassol">
+                                <div class="atelier-piece-img-container">
+                                    <img src="images/atelier_girassol.jpg" alt="Vasos com Girassóis painting by my mom">
+                                    <div class="atelier-piece-overlay">
+                                        <button class="atelier-zoom-btn" aria-label="View Full Size">Zoom</button>
+                                    </div>
+                                </div>
+                                <div class="atelier-piece-info">
+                                    <h4 class="atelier-piece-title">Vasos com Girassóis</h4>
+                                    <p class="atelier-piece-medium">Oil on Canvas (40x50cm)</p>
+                                    <div class="atelier-piece-footer">
+                                        <span class="atelier-badge badge-soldout">Sold Out</span>
+                                        <button class="atelier-view-link-btn">View Full Size</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Card 4: Caravela -->
+                            <div class="atelier-piece-card" data-piece-id="caravela">
+                                <div class="atelier-piece-img-container">
+                                    <img src="images/atelier_caravela.jpg" alt="Veleiro com Caravela painting by my mom">
+                                    <div class="atelier-piece-overlay">
+                                        <button class="atelier-zoom-btn" aria-label="View Full Size">Zoom</button>
+                                    </div>
+                                </div>
+                                <div class="atelier-piece-info">
+                                    <h4 class="atelier-piece-title">Veleiro com Caravela</h4>
+                                    <p class="atelier-piece-medium">Oil on Canvas (30x40cm)</p>
+                                    <div class="atelier-piece-footer">
+                                        <span class="atelier-badge badge-soldout">Sold Out</span>
+                                        <button class="atelier-view-link-btn">View Full Size</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Card 5: Praia de Tambaba -->
+                            <div class="atelier-piece-card" data-piece-id="tambaba">
+                                <div class="atelier-piece-img-container">
+                                    <img src="images/atelier_tambaba.jpg" alt="Praia de Tambaba painting by my mom">
+                                    <div class="atelier-piece-overlay">
+                                        <button class="atelier-zoom-btn" aria-label="View Full Size">Zoom</button>
+                                    </div>
+                                </div>
+                                <div class="atelier-piece-info">
+                                    <h4 class="atelier-piece-title">Praia de Tambaba</h4>
+                                    <p class="atelier-piece-medium">Oil on Canvas (30x40cm)</p>
+                                    <div class="atelier-piece-footer">
+                                        <span class="atelier-badge badge-soldout">Sold Out</span>
+                                        <button class="atelier-view-link-btn">View Full Size</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Card 6: Varanda Florida -->
+                            <div class="atelier-piece-card" data-piece-id="varanda">
+                                <div class="atelier-piece-img-container">
+                                    <img src="images/atelier_varanda.jpg" alt="Varanda Florida painting by my mom">
+                                    <div class="atelier-piece-overlay">
+                                        <button class="atelier-zoom-btn" aria-label="View Full Size">Zoom</button>
+                                    </div>
+                                </div>
+                                <div class="atelier-piece-info">
+                                    <h4 class="atelier-piece-title">Varanda Florida</h4>
+                                    <p class="atelier-piece-medium">Oil on Canvas (40x50cm)</p>
+                                    <div class="atelier-piece-footer">
+                                        <span class="atelier-badge badge-soldout">Sold Out</span>
+                                        <button class="atelier-view-link-btn">View Full Size</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Card 7: Ipê Amarelo nas Montanhas -->
+                            <div class="atelier-piece-card" data-piece-id="ipe_montanhas">
+                                <div class="atelier-piece-img-container">
+                                    <img src="images/atelier_ipe_montanhas.jpg" alt="Ipê Amarelo nas Montanhas painting by my mom">
+                                    <div class="atelier-piece-overlay">
+                                        <button class="atelier-zoom-btn" aria-label="View Full Size">Zoom</button>
+                                    </div>
+                                </div>
+                                <div class="atelier-piece-info">
+                                    <h4 class="atelier-piece-title">Ipê Amarelo nas Montanhas</h4>
+                                    <p class="atelier-piece-medium">Oil on Canvas (40x50cm)</p>
+                                    <div class="atelier-piece-footer">
+                                        <span class="atelier-badge badge-soldout">Sold Out</span>
+                                        <button class="atelier-view-link-btn">View Full Size</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Card 8: Ipê Amarelo -->
+                            <div class="atelier-piece-card" data-piece-id="ipe">
+                                <div class="atelier-piece-img-container">
+                                    <img src="images/atelier_ipe.jpg" alt="Ipê Amarelo painting by my mom">
+                                    <div class="atelier-piece-overlay">
+                                        <button class="atelier-zoom-btn" aria-label="View Full Size">Zoom</button>
+                                    </div>
+                                </div>
+                                <div class="atelier-piece-info">
+                                    <h4 class="atelier-piece-title">Ipê Amarelo</h4>
+                                    <p class="atelier-piece-medium">Oil on Canvas (30x40cm)</p>
+                                    <div class="atelier-piece-footer">
+                                        <span class="atelier-badge badge-soldout">Sold Out</span>
+                                        <button class="atelier-view-link-btn">View Full Size</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        
+                        <div class="atelier-pinterest-link-row">
+                            <a href="https://br.pinterest.com/cflcosta5/_created/" target="_blank" rel="noopener noreferrer" class="atelier-pinterest-link">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="18" height="18" style="vertical-align: -3px; margin-right: 6px;"><path d="M12 0a12 12 0 0 0-4.37 23.17c-.07-.63-.13-1.6.03-2.29l1.42-6.02s-.36-.72-.36-1.78c0-1.67.97-2.92 2.18-2.92 1.03 0 1.52.77 1.52 1.69 0 1.03-.66 2.58-1 4.02-.28 1.2.6 2.18 1.78 2.18 2.14 0 3.78-2.26 3.78-5.52 0-2.89-2.07-4.91-5.04-4.91-3.44 0-5.46 2.58-5.46 5.25 0 1.04.4 2.16.9 2.76a.33.33 0 0 1 .08.34l-.34 1.38c-.06.22-.18.27-.4.17-1.53-.71-2.48-2.94-2.48-4.73 0-3.86 2.81-7.41 8.09-7.41 4.25 0 7.55 3.03 7.55 7.07 0 4.22-2.66 7.62-6.36 7.62-1.24 0-2.4-.64-2.8-1.4l-.76 2.9c-.28 1.05-1.02 2.37-1.52 3.18A12 12 0 1 0 12 0z"/></svg>
+                                See Her Full Portfolio on Pinterest
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- How to Acquire Section -->
+                    <div class="atelier-acquire-card">
+                        <h3>How to Acquire</h3>
+                        <p>Each piece is unique and handcrafted with love. We ship worldwide directly from João Pessoa, Brazil. To check shipping rates, request a custom commission, or secure an available piece, simply click the button below to get in touch via email or WhatsApp.</p>
+                        <button class="atelier-inquire-btn" id="atelier-inquire-btn">Inquire About a Piece</button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <!-- Dark Footer Block -->
+        <div class="footer-dark-block">
+            <div class="container">
+                <div class="footer-columns">
+                    <!-- Column 1: Recent Posts -->
+                    <div class="footer-col">
+                        <h3 class="footer-col-title">Recent Posts</h3>
+                        <ul class="footer-links">
+                            <li><a href="#article-a-nova-lei-dos-25" class="footer-article-link" data-slug="a-nova-lei-dos-25">The New "Law of 25"</a></li>
+                            <li><a href="#article-emocao-e-sentimento" class="footer-article-link" data-slug="emocao-e-sentimento">Emotion and Feeling</a></li>
+                            <li><a href="#article-carreira-e-vocacao" class="footer-article-link" data-slug="carreira-e-vocacao">Career and Vocation</a></li>
+                            <li><a href="#article-escrita-cientifica" class="footer-article-link" data-slug="escrita-cientifica">Scientific Writing</a></li>
+                            <li><a href="#article-patentes-em-tecnologia" class="footer-article-link" data-slug="patentes-em-tecnologia">Patents in Technology</a></li>
+                        </ul>
+                    </div>
+                    <!-- Column 2: More About Me -->
+                    <div class="footer-col">
+                        <h3 class="footer-col-title">More About Me</h3>
+                        <ul class="footer-links">
+                            <li><a href="#services" class="nav-trigger" data-target="services">Services</a></li>
+                            <li><a href="#atelier" class="nav-trigger" data-target="atelier">Atelier</a></li>
+                            <li><a href="https://mateuslucena.substack.com/" target="_blank" rel="noopener noreferrer">Substack Newsletter</a></li>
+                            <li><a href="https://linkedin.com/in/mateuslcn/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                            <li><a href="https://instagram.com/mateuslcn/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                        </ul>
+                    </div>
+                    <!-- Column 3: Search & Follow -->
+                    <div class="footer-col">
+                        <h3 class="footer-col-title">Search This Site</h3>
+                        <form id="footer-search-form" class="footer-search-form">
+                            <input type="text" id="footer-search-input" class="footer-search-input" placeholder="Search this website">
+                            <button type="submit" class="footer-search-btn" aria-label="Search">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                            </button>
+                        </form>
+                        
+                        <h3 class="footer-col-title" style="margin-top: 2rem;">Follow Me Elsewhere</h3>
+                        <div class="footer-social-circles">
+                            <!-- Substack -->
+                            <a href="https://mateuslucena.substack.com/" target="_blank" rel="noopener noreferrer" class="social-circle-btn" title="Substack">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                                    <path d="M22.539 8.242H1.46V2.25h21.079v5.992zm0 4.673H1.46V11.23h21.079v1.685zm0 1.685H1.46v9.123L12 18.061l10.539 5.664V14.6z"/>
+                                </svg>
+                            </a>
+                            <!-- LinkedIn -->
+                            <a href="https://linkedin.com/in/mateuslcn/" target="_blank" rel="noopener noreferrer" class="social-circle-btn" title="LinkedIn">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                                </svg>
+                            </a>
+                            <!-- Instagram -->
+                            <a href="https://instagram.com/mateuslcn/" target="_blank" rel="noopener noreferrer" class="social-circle-btn" title="Instagram">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                                </svg>
+                            </a>
+                            <!-- X -->
+                            <a href="https://x.com/mateuslcn" target="_blank" rel="noopener noreferrer" class="social-circle-btn" title="X (Twitter)">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                                </svg>
+                            </a>
+                            <!-- Google Scholar -->
+                            <a href="https://scholar.google.com.br/citations?user=oERfk7UAAAAJ&hl=pt-BR" target="_blank" rel="noopener noreferrer" class="social-circle-btn" title="Google Scholar">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                                    <path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.838 3.94A8 8 0 0 1 12 9a8 8 0 0 1 7.162 4.44L24 9.5z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Light Footer Block -->
+        <div class="footer-light-block">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <div class="footer-left-info">
+                        <p class="footer-copyright">&copy; Mateus Lucena 2026. All rights reserved.</p>
+                        <p class="footer-powered">Proudly powered by <a href="https://antigravity.google/product/antigravity-2" target="_blank" rel="noopener noreferrer"><strong>Antigravity 2.0</strong></a></p>
+                    </div>
+                    <nav class="footer-bottom-nav">
+                        <a href="#home" class="nav-trigger" data-target="home">Home</a>
+                        <a href="#articles" class="nav-trigger" data-target="articles">Articles</a>
+                        <a href="#publications" class="nav-trigger" data-target="publications">Publications</a>
+                        <a href="#services" class="nav-trigger" data-target="services">Services</a>
+                        <a href="#atelier" class="nav-trigger" data-target="atelier">Atelier</a>
+                        <a href="#about" class="nav-trigger" data-target="about">About</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal for Map Galleries -->
+    <div id="map-lightbox" class="map-lightbox-modal" aria-hidden="true" role="dialog">
+        <button class="lightbox-close" id="lightbox-close" aria-label="Close image viewer">&times;</button>
+        <button class="lightbox-arrow lightbox-arrow-left" id="lightbox-prev" aria-label="Previous image">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" /></svg>
+        </button>
+        <div class="lightbox-content-container">
+            <img class="lightbox-img" id="lightbox-img" src="" alt="Full view">
+            <div class="lightbox-meta">
+                <span class="lightbox-counter" id="lightbox-counter">1/5</span>
+                <span class="lightbox-caption" id="lightbox-caption"></span>
+            </div>
+        </div>
+        <button class="lightbox-arrow lightbox-arrow-right" id="lightbox-next" aria-label="Next image">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" /></svg>
+        </button>
+    </div>
+
+    <!-- JavaScript Links -->
+    <script src="data.js?v=2.0.0"></script>
+    <script src="main.js?v=2.0.2"></script>
+</body>
+</html>
