@@ -1,8 +1,11 @@
-# Site Pessoal - Mateus Lucena
+# Personal Website - Mateus Lucena
 
-Este projeto é o site pessoal de **Mateus Lucena**, inspirado no design e na estrutura minimalista e elegante do site do Ken Judy (https://kenjudy.us/about/).
+This project is the personal website of **Mateus Lucena**, inspired by the minimalist and elegant design and structure of Ken Judy's website ([https://kenjudy.us/about/](https://kenjudy.us/about/)) and Austin Kleon's official website ([https://austinkleon.com/](https://austinkleon.com/)).
 
-O site contém:
-- Biografia e informações profissionais baseadas no seu Substack (https://mateuslucena.substack.com/).
-- Lista de artigos recentes publicados no Substack.
-- Design premium responsivo em creme, verde e tons escuros.
+The website features:
+
+* A biography and professional information based on his Substack ([https://mateuslucena.substack.com/](https://www.google.com/search?q=https%3A%2F%2Fmateuslucena.substack.com%2F)).
+* A list of recent articles published on Substack.
+* A premium, responsive design featuring cream, green, and dark tones.
+
+> **Note:** This project was entirely "vibe-coded" using Antigravity 2.0.
