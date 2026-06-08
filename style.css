@@ -2071,7 +2071,7 @@ body.map-fullscreen-active .site-footer {
     }
 
     .footer-bottom-content {
-        flex-direction: column;
+        flex-direction: column-reverse;
         align-items: center;
         text-align: center;
         gap: 1.5rem;
