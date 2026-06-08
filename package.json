@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "test": "node test-suite.js"
+  },
   "dependencies": {
     "puppeteer": "^25.1.0"
   }
