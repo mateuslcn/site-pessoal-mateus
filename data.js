@@ -762,15 +762,15 @@ window.SITE_DATA.mapCities = [
         { 
             id: "valencia",
             name: "Valencia - CV, Spain", 
-            shortName: "Valencia-CV",
+            shortName: "Valencia-Spain",
             coords: [39.4699, -0.3763],
             tooltipOptions: { permanent: true, direction: 'top', offset: [0, -40], className: 'map-tooltip' },
             images: [
-                { url: 'images/valencia_arts_sciences.png', caption: 'City of Arts and Sciences (Valencia-CV)' },
-                { url: 'images/valencia_cathedral.png', caption: 'Valencia Cathedral & El Miguelete (Valencia-CV)' },
-                { url: 'images/valencia_lonja.png', caption: 'La Lonja de la Seda Hall (Valencia-CV)' },
-                { url: 'images/valencia_plaza.png', caption: 'Plaza del Ayuntamiento (Valencia-CV)' },
-                { url: 'images/valencia_beach.png', caption: 'Malvarrosa Beach (Valencia-CV)' }
+                { url: 'images/valencia_arts_sciences.png', caption: 'City of Arts and Sciences (Valencia-Spain)' },
+                { url: 'images/valencia_cathedral.png', caption: 'Valencia Cathedral & El Miguelete (Valencia-Spain)' },
+                { url: 'images/valencia_lonja.png', caption: 'La Lonja de la Seda Hall (Valencia-Spain)' },
+                { url: 'images/valencia_plaza.png', caption: 'Plaza del Ayuntamiento (Valencia-Spain)' },
+                { url: 'images/valencia_beach.png', caption: 'Malvarrosa Beach (Valencia-Spain)' }
             ]
         }
     ];
