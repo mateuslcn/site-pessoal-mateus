@@ -603,6 +603,16 @@ window.SITE_DATA.articles = [
 
 window.SITE_DATA.publications = [
         {
+            title: "Deploying Language Models on Android-Based Edge Devices: A Practical Evaluation Pipeline",
+            authors: "Suayder Costa, Igor Lima, William Harada, Mateus Lucena, Arthur Alves, Myke Valadão, Cassio Alves, Ruan Belem, Agemilson Pimentel, Romulo Fabricio, Alexandre Miranda, Daniel Lins, Frederico Gonçalves, Sidney Leal",
+            venue: "Brazilian Symposium on Ubiquitous and Pervasive Computing (SBCUP)",
+            year: "2026",
+            badge: "SBCUP",
+            abstract: "Presents a practical evaluation pipeline for deploying small language models (SLMs) on constrained Android-based edge devices, using Android TV as a representative case study. The work investigates deployment feasibility and software-level acceleration strategies, demonstrating stable execution for 4-bit quantized models and showing that the MNN inference engine significantly outperforms llama.cpp on ARM architectures.",
+            url: "https://sol.sbc.org.br/index.php/sbcup/article/view/43294",
+            icon: "images/pub_nlp.png"
+        },
+        {
             title: "An Exploratory Pilot Survey on Technical Quality Control Practices in Agile R&D Projects",
             authors: "Mateus Costa Lucena",
             venue: "arXiv preprint (arXiv:2601.06689)",
