@@ -624,6 +624,10 @@ body.map-fullscreen-active .site-footer {
     z-index: 1; /* Keep it below header and menu dropdowns */
 }
 
+#about-map .leaflet-tile-pane {
+    filter: grayscale(35%) contrast(92%) brightness(102%);
+}
+
 /* Expand Map Button */
 .expand-map-btn {
     position: absolute;
