@@ -603,6 +603,16 @@ window.SITE_DATA.articles = [
 
 window.SITE_DATA.publications = [
         {
+            title: "Making Technical Debt Visible: An Indicator-Driven Radar for Agile Teams",
+            authors: "Mateus Costa Lucena, Antonio Carlos Pacagnella Junior, Gizelle Sandrini Lemos",
+            venue: "International Conference on Agile Software Development (XP Workshops), Springer",
+            year: "2026",
+            badge: "Springer / XP",
+            abstract: "Proposes a visual quality management process based on the segmentation of the Technical Debt Radar, enabling agile teams to map indicators to relevant dimensions and integrate them directly into Scrum decision-making. The model supports continuous measurement, enhances communication, and connects indicators to Scrum events so that technical debt is systematically discussed and managed rather than merely perceived.",
+            url: "https://link.springer.com/chapter/10.1007/978-3-032-39205-3_20",
+            icon: "images/pub_quality.png"
+        },
+        {
             title: "Deploying Language Models on Android-Based Edge Devices: A Practical Evaluation Pipeline",
             authors: "Suayder Costa, Igor Lima, William Harada, Mateus Lucena, Arthur Alves, Myke Valadão, Cassio Alves, Ruan Belem, Agemilson Pimentel, Romulo Fabricio, Alexandre Miranda, Daniel Lins, Frederico Gonçalves, Sidney Leal",
             venue: "Brazilian Symposium on Ubiquitous and Pervasive Computing (SBCUP)",
